@@ -1,6 +1,105 @@
-body {
-    margin: 0;
-    padding: 0;
+html, body, p, img {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Playfair display", sans-serif;
+    font-weight: 450;
+}
+
+.headingWrapper {
+    transform: translateY(50%) skewY(10deg);
+    display: flex;
+    padding: 20px 0;
+    margin: 0 50px;
+}
+
+.headingBackground {
+    transform: translate(0, -15px);
+    background-color: #4681bb;
+    
+    transform: translateY(-30%) skewY(-10deg);
+    min-height: 550px;
+}
+
+.headingContent {
+    background-color: white;
+    box-shadow: 3px 3px 15px;
+    z-index: 1;
+    padding: 35px;
+    align-items: start;
+}
+
+.links {
+    min-width: 250px;
+    background-color: white;
+    text-align: right;
+    margin: 40px 0;
+}
+
+.links img {
+    margin: 0 20px;
+}
+
+.projectsHeading {
+    margin: 30px 50px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin: 0 50px;
+    border:2px solid #62c259;
+}
+
+.card {
+    width: 350px;
+    box-shadow: 2px 2px 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 4fr 1fr 1fr;
+}
+
+.cardThumbnail {
+    min-width: 350px;
+    min-height: 350px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-color: #62c259;
+}
+
+.cardTitle {
+    padding: 0 0 0 20px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.cardIcons {
+    padding: 0 20px 0 0;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: right;
+    align-content: center;
+}
+
+.cardIcons img {
+    margin: 0 10px;
+}
+
+.cardDescription {
+    padding: 20px;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.contact {
+    background-color: #4078af;
 }
