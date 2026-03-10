@@ -10,10 +10,19 @@ h1, h2, h3, h4 {
     font-weight: 450;
 }
 
+@media (max-width: 500px) {
+
+}
+
+@media (max-width: 1000px) {
+
+}
+
 .headingWrapper {
     transform: translateY(50%) skewY(10deg);
-    display: flex;
-    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 40px 1fr 40px;
     margin: 0 50px;
 }
 
@@ -26,6 +35,8 @@ h1, h2, h3, h4 {
 }
 
 .headingContent {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
     background-color: white;
     box-shadow: rgb(88, 88, 88) 5px 5px 20px;
     z-index: 1;
@@ -33,9 +44,26 @@ h1, h2, h3, h4 {
     align-items: start;
 }
 
+.portrait {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.nameTag {
+    display: grid;
+    align-items: end;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    z-index: 1;
+    color: white;
+    font-size: 2.2em;
+    text-align: center;
+}
+
 .links {
     min-width: 250px;
-    /* text-align: right; */
     margin: 40px 0;
 }
 
@@ -44,7 +72,7 @@ h1, h2, h3, h4 {
 }
 
 .projectsHeading {
-    margin: 30px 50px;
+    margin: 50px 50px;
 }
 
 .projects {
