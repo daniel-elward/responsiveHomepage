@@ -11,55 +11,59 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 500px) {
-
+    html {
+        background-color: purple;
+    }
 }
 
 @media (max-width: 1000px) {
-
-}
-
-.headingWrapper {
-    transform: translateY(50%) skewY(10deg);
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: 40px 1fr 40px;
-    margin: 0 50px;
+    html {
+        background-color: red;
+    }
 }
 
 .headingBackground {
     transform: translate(0, -15px);
     background-color: #4681bb;
-    
+    position: relative;
     transform: translateY(-30%) skewY(-10deg);
-    min-height: 550px;
+    min-height: 600px;
 }
 
-.headingContent {
-    grid-column: 2 / 3;
-    grid-row: 1 / 4;
-    background-color: white;
-    box-shadow: rgb(88, 88, 88) 5px 5px 20px;
+.headingWrapper {
+    position: absolute;
+    top: 0px;
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 10fr 1fr;
     z-index: 1;
-    padding: 35px;
-    align-items: start;
 }
 
 .portrait {
+    position: relative;
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    grid-row: 2 / 2;
     color: rgb(255, 255, 255);
-    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.aboutMe {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    box-shadow: rgb(88, 88, 88) 5px 5px 20px;
+    background-color: white;
+    padding: 50px;
 }
 
 .nameTag {
-    display: grid;
-    align-items: end;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
     z-index: 1;
     color: white;
     font-size: 2.2em;
-    text-align: center;
 }
 
 .links {
