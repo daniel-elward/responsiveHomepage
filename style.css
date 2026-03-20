@@ -146,6 +146,7 @@ h1, h2, h3, h4 {
 @media (max-width: 1000px) {
 
 .headingWrapper {
+    width: 100%;
     margin: 100px 50px 0 50px;
     display: block;
     z-index: 1;
@@ -177,18 +178,71 @@ h1, h2, h3, h4 {
 
 }
 
-@media (max-width: 500px) {
-    html {
-        background-color: rgb(221, 56, 221);
-    }
-
+@media (max-width: 600px) {
 .headingBackground {
-    width: 100%;
+    height: 250px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     background-color: #4681bb;
-    transform: translateY(-30%) skewY(-10deg);
+    transform: translateY(-30%) skewY(-25deg);
     min-height: 600px;
+}
+
+.headingWrapper {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    transform: translateY(30%) skewY(25deg);
+    z-index: 1;
+}
+
+.portrait {
+    max-width: 400px;
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: rgb(255, 255, 255);
+}
+
+.aboutMe {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: white;
+    padding: 50px;
+}
+
+.nameTag {
+    position: absolute;
+    left: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    z-index: 1;
+    color: white;
+    font-size: 3.5em;
+    border: 1px solid red;
+}
+
+.contact {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #4681bb;
+}
+
+.contactInfo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 0 20px 0 20px;
+    color: white;
+}
+
+.footerImg {
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
 }
 }
