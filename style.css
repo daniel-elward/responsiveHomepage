@@ -181,4 +181,14 @@ h1, h2, h3, h4 {
     html {
         background-color: rgb(221, 56, 221);
     }
+
+.headingBackground {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background-color: #4681bb;
+    transform: translateY(-30%) skewY(-10deg);
+    min-height: 600px;
+}
 }
