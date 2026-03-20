@@ -3,6 +3,8 @@ html, body, p, img {
     padding: 0px;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 h1, h2, h3, h4 {
@@ -10,30 +12,18 @@ h1, h2, h3, h4 {
     font-weight: 450;
 }
 
-@media (max-width: 500px) {
-    html {
-        background-color: purple;
-    }
-}
-
-@media (max-width: 1000px) {
-    html {
-        background-color: red;
-    }
-}
-
 .headingBackground {
     transform: translate(0, -15px);
     background-color: #4681bb;
-    position: relative;
+    margin: -600px 0 30px 0;
     transform: translateY(-30%) skewY(-10deg);
     min-height: 600px;
 }
 
 .headingWrapper {
-    position: absolute;
+    position: relative;
     top: 0px;
-    margin: 50px 100px;
+    margin: 50px;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 10fr 1fr;
@@ -41,6 +31,7 @@ h1, h2, h3, h4 {
 }
 
 .portrait {
+    max-width: 400px;
     position: relative;
     grid-column: 1 / 2;
     grid-row: 2 / 2;
@@ -58,17 +49,18 @@ h1, h2, h3, h4 {
 
 .nameTag {
     position: absolute;
-    bottom: 0px;
+    bottom: 60px;
     width: 100%;
     text-align: center;
     z-index: 1;
     color: white;
-    font-size: 2.2em;
+    font-size: 3em;
 }
 
 .links {
     min-width: 250px;
     margin: 40px 0;
+    text-align: right;
 }
 
 .links img {
@@ -146,4 +138,58 @@ h1, h2, h3, h4 {
 
 .contactInfo p {
     padding: 12px;
+}
+
+/* MEDIA  QUERIES*/
+@media (max-width: 1000px) {
+
+html {
+    background-color: rgb(218, 31, 31);
+}
+
+.headingBackground {
+    transform: translate(0, -15px);
+    background-color: #4681bb;
+    margin: -800px 0 200px 0;
+    transform: translateY(-30%) skewY(-10deg);
+    min-height: 600px;
+}
+
+.headingWrapper {
+    position: relative;
+    top: 0px;
+    margin: 50px;
+    display: block;
+    z-index: 1;
+}
+
+.portrait {
+    float: left;
+    color: rgb(255, 255, 255);
+    margin: -35px 0 0 -35px;
+    padding: 20px;
+}
+
+.aboutMe {
+    box-shadow: rgb(88, 88, 88) 5px 5px 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    margin: 80px 40px;
+}
+
+.nameTag {
+    top: 10px;
+    left: 250px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-size: 3.5em;
+}
+}
+
+@media (max-width: 500px) {
+    html {
+        background-color: rgb(221, 56, 221);
+    }
 }
