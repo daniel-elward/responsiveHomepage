@@ -208,8 +208,6 @@ body {
     transform: translateY(30%) skewY(25deg);
     z-index: 1;
     margin: 0;
-
-    border: 2px solid orange;
 }
 
 .portrait {
@@ -230,8 +228,6 @@ body {
     margin-top: 150px;
     padding: 0;
 
-    border: 2px solid red;
-
 }
 
 .nameTag {
@@ -251,10 +247,8 @@ body {
 .projectsHeading {
     width: 100%;
     min-width: 400px;
-
     text-align: center;
-    margin: 600px 0 0 0;
-    border: 2px solid red;
+    margin: 500px 0 30px 0;
 }
 
 .projects {
@@ -265,8 +259,6 @@ body {
     justify-content: space-evenly;
     gap: 50px;
     margin: 0 0 100px 0;
-
-    border: 2px solid red;
 }
 
 .contact {
